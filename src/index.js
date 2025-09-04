@@ -1,4 +1,4 @@
-import("./async").then((exports) => {
+import("./constants").then((exports) => {
   console.log("foo", exports.foo);
   console.log("bar", exports.bar);
 });

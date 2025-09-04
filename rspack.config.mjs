@@ -26,8 +26,16 @@ const config = {
       : path.resolve(__dirname, "rspack-dist"),
     filename: "[name].js",
   },
+  module: {
+    parser: {
+      "javascript/auto": {
+        inlineConst: true,
+      },
+    },
+  },
   experiments: {
     css: true,
+    inlineConst: true,
   },
 };
 
